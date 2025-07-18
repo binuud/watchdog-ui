@@ -41,3 +41,9 @@ run: ## run angular dev server
 
 exec: ## get terminal access to container
 	docker exec -it $(APP) sh
+
+nginx-start: ## start nginx server locally
+	docker container start watchdog-nginx 
+
+nginx-create: ## 
+	docker stop watchdog-nginx; docker rm watchdog-nginx;docker run -p "12080:80"  --name watchdog-nginx -v $(shell pwd)/deployment/local/nginx.conf:/etc/nginx/conf.d/default.conf:ro -d nginx	

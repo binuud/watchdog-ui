@@ -1,0 +1,6 @@
+<p>domain-list works!</p>
+@for (item of domainList.summaries; track $index) {
+    <div>
+        <p>{{item.domain?.domainName}}</p>
+    </div>
+}
