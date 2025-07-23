@@ -39,6 +39,8 @@ run-shell: ## run mock server
 run: ## run angular dev server
 	docker stop $(APP_DEV); docker rm $(APP_DEV);docker run  --name $(APP_DEV) -p "4200:4200" -v "$(shell pwd)/app:/app" $(REPO)/$(APP_DEV) start
 
+npm-install: ## to install node modules for project
+	docker stop $(APP_DEV); docker rm $(APP_DEV);docker run  --name $(APP_DEV) -p "4200:4200" -v "$(shell pwd)/app:/app" $(REPO)/$(APP_DEV) install
 
 exec: ## get terminal access to container
 	docker exec -it $(APP_DEV) sh
