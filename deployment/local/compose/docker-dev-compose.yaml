@@ -1,0 +1,37 @@
+name: watchdog
+services:
+  # Proxy Nginx Server
+  proxyNginx:
+    image: nginx
+    restart: always
+    ports:
+    - 9080:80
+    volumes:
+    - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+    - watchdogBackend  
+    networks:
+    - binuud_network
+  watchdogBackend:
+    image: dronasys/watchdog
+    restart: always
+    ports:
+    - 10080:9080
+    volumes:
+    - ./domains-config.yaml:/configs/config.yaml
+    networks:
+    - binuud_network
+  watchdogDevUI:
+    image: dronasys/watchdog-dev-ui
+    build:
+      dockerfile: ui-dev.dockerfile
+    command: start  
+    ports:
+    - 4200:4200  
+    networks:
+    - binuud_network
+    volumes:
+    - ../../../app:/app   
+networks:
+  binuud_network:
+    driver: bridge      
