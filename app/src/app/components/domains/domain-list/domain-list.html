@@ -1,6 +1,56 @@
-<p>domain-list works!</p>
-@for (item of domainList.summaries; track $index) {
-    <div>
-        <p>{{item.domain?.domainName}}</p>
-    </div>
+
+<table class="table table-striped">
+<thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col" colspan="3" class="text-center">Domain</th>
+      <th scope="col" class="text-center">Certs</th>
+      <th scope="col" class="text-center">IP</th>
+      <th scope="col" class="text-center">Reachable</th>
+    </tr>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col" class="text-left">Name</th>
+      <th scope="col" class="text-center">Mutaded</th>
+      <th scope="col" class="text-center">Expiry</th>
+      <th scope="col"></th>
+      <th scope="col" class="text-center"></th>
+      <th scope="col" class="text-center"></th>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td class="text-center"><small>(Days)</small></td>
+        <td class="text-center"><small>(Days)</small></td>
+        <td></td>
+        <td></td>
+        <td class="text-center">(Reachable/Total)</td>
+    </tr>
+  </thead>
+  @for (item of domainList.summaries; track $index) {
+    <tr>
+        <td>{{ $index }}</td>
+        <td class="text-left">{{item.domain?.name}}</td>
+        <td class="text-center">{{item.whoIsMutatedDays}}</td>
+        <td class="text-center">{{item.domainExpiryDays}}</td>
+        <td class="text-center">{{item.numCerts}}</td>
+        <td class="text-center">{{item.numIp}}</td>
+        <td class="text-center">{{item.validEndpoints}}/{{item.numEndpoints}}</td>
+    </tr>
 }
+</table>
+
+<dl class="row small mt-4">
+
+  <dt class="col-sm-3">Certificates</dt>
+  <dd class="col-sm-9">Domain can have multiple Certificates</dd>
+
+  <dt class="col-sm-3">IP</dt>
+  <dd class="col-sm-9">Number of IP associated with the domain</dd>
+
+  <dt class="col-sm-3">Reachability</dt>
+  <dd class="col-sm-9">
+    <p>Watchdog tests reachability of configured endpoints of a domains.
+    <br>This specifies the total number of endpoints which are working (vs) the total number of configured endpoints for a domain.</p>
+  </dd>
+</dl>

@@ -22,3 +22,10 @@ http://localhost:9080/home
 This will start the watchdog backend service with config from ./deployment/local/compose/domains-config.yaml.
 The frontend will be in developer mode, allowing user to edit the angular project and see live results.
 
+## Credits
+
+| For             | License     | Repo                                    | 
+| :---            |    :----    |          :---                           |
+| Angular         | MIT         | https://angular.dev                     |
+| Bootstrap       | MIT         | https://getbootstrap.com/               |
+
