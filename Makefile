@@ -30,7 +30,7 @@ help: ## This help.
 
 build-dev: ## Build the react developer container
 	@echo "====================> Building Angular Container"
-	docker build --build-arg BUILD_VER=$(BUILD_VER) -t $(REPO)/$(APP_DEV) -f deployment/local/compose/ui-dev.dockerfile .
+	docker build --build-arg BUILD_VER=$(BUILD_VER) --platform=linux/amd64,linux/arm64 -t $(REPO)/$(APP_DEV) -f deployment/local/compose/ui-dev.dockerfile .
 	@echo "====================> Successfully build container: $(REPO)/$(APP_DEV) ."
 
 run-shell: ## run mock server
