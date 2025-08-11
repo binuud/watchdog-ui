@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { GetRequest, ListSummariesRequest, WatchDog } from '../../gen/v1/watchdog/watchdogService.pb';
+import { GetDetailsRequest, GetRequest, ListSummariesRequest, WatchDog } from '../../gen/v1/watchdog/watchdogService.pb';
 import { InitReq } from '../../gen/fetch.pb';
 
 @Injectable({
@@ -25,5 +25,17 @@ export class DomainService {
 
   }
 
+  async fetchDomainDetails(uuid: string = "", name:string = "") {
+
+    const req: GetDetailsRequest = {
+      uuid: uuid,
+      name: name
+    }
+    const initReq: InitReq = {
+      pathPrefix: DomainService.SERVICE_ENDPOINT
+    }
+    return await WatchDog.GetDetails(req, initReq);
+
+  }
 
 }

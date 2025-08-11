@@ -32,7 +32,7 @@
     @for (item of domainList.summaries; track $index) {
         <tr>
             <td>{{ $index }}</td>
-            <td class="text-left">{{item.domain?.name}}</td>
+            <td class="text-left"><a href="/domainDetails/{{item.domain?.name}}">{{item.domain?.name}}</a></td>
             <td class="text-center">{{item.whoIsMutatedDays}}</td>
             <td class="text-center">{{item.domainExpiryDays}}</td>
             <td class="text-center">{{item.numCerts}}</td>

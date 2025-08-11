@@ -1,0 +1,58 @@
+<div class="container">
+    <h3>Domain - {{ domainId }} - Details </h3>
+    <div class="card mb-3">
+        <div class="card-body">
+            <h5 class="card-title">Summary</h5>
+            <table class="table table-striped">
+                <tbody>
+                    <tr>
+                        <td>Domain Registry Mutated </td>
+                        <td>{{ domainInfo?.summary?.whoIsMutatedDays }} days ago</td>
+                    </tr>
+                     <tr>
+                        <td>Domain Expiry in</td>
+                        <td>{{ domainInfo?.summary?.domainExpiryDays }} days</td>
+                    </tr>
+                    <tr>
+                        <td>Certificate Expiry in</td>
+                        <td>{{ domainInfo?.summary?.leastCertExpiryInDays }} days</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h5 class="mt-2">Ip Addresses Associated ({{ domainInfo?.info?.ipAddresses?.length }})</h5>
+            <ul class="list-group">
+                @for (item of domainInfo?.info?.ipAddresses; track $index) {
+                    <li class="list-group-item">{{ item }}</li>
+                }
+            </ul>
+
+            <h5 class="mt-2">Endpoint Reachability</h5>
+            <table class="table table-striped">
+                <tbody>
+                    @for (item of domainInfo?.info?.endpointStatuses; track $index) {
+                        <tr>
+                            <td>{{ item.endpoint }} </td>
+                            <td> Response Code 
+                                @if (item.statusCode == "200") {
+                                    <span class="badge text-bg-success">{{ item.statusCode }}</span>
+                                } @else {
+                                    <span class="badge text-bg-danger">{{ item.statusCode }}</span>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="card-body">
+            <h5 class="card-title">WhoIs</h5>
+            <pre>
+                {{ domainInfo?.info?.whois }}
+            </pre>
+        </div>
+    </div>
+</div>
+
