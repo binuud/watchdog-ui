@@ -26,18 +26,23 @@
         <td></td>
         <td class="text-center">(Reachable/Total)</td>
     </tr>
-  </thead>
-  @for (item of domainList.summaries; track $index) {
-    <tr>
-        <td>{{ $index }}</td>
-        <td class="text-left">{{item.domain?.name}}</td>
-        <td class="text-center">{{item.whoIsMutatedDays}}</td>
-        <td class="text-center">{{item.domainExpiryDays}}</td>
-        <td class="text-center">{{item.numCerts}}</td>
-        <td class="text-center">{{item.numIp}}</td>
-        <td class="text-center">{{item.validEndpoints}}/{{item.numEndpoints}}</td>
-    </tr>
-}
+    </thead>
+    
+    <tbody>
+    @for (item of domainList.summaries; track $index) {
+        <tr>
+            <td>{{ $index }}</td>
+            <td class="text-left">{{item.domain?.name}}</td>
+            <td class="text-center">{{item.whoIsMutatedDays}}</td>
+            <td class="text-center">{{item.domainExpiryDays}}</td>
+            <td class="text-center">{{item.numCerts}}</td>
+            <td class="text-center">{{item.numIp}}</td>
+            <td class="text-center">{{item.validEndpoints}}/{{item.numEndpoints}}</td>
+        </tr>
+    }
+    
+    </tbody>
+
 </table>
 
 <dl class="row small mt-4">
