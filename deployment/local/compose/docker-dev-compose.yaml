@@ -17,6 +17,7 @@ services:
     restart: always
     ports:
     - 10080:9080
+    - 10090:9090
     volumes:
     - ./domains-config.yaml:/configs/config.yaml
     networks:
