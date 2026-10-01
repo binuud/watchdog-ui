@@ -64,7 +64,8 @@
         },
         "serve": {
           "options": {
-            "allowedHosts": ["localhost", "host.docker.internal"]
+            "allowedHosts": ["localhost", "host.docker.internal"],
+            "proxyConfig": "proxy.conf.json"
           },
           "builder": "@angular/build:dev-server",
           "configurations": {

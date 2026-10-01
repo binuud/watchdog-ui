@@ -3,11 +3,23 @@ Dashboard for watchdog
 
 ## Developer mode
 
+Build the angular/cli-with-chrome-headless docker image from the below project
+https://github.com/binuud/containers
+
 The node modules required for this project are not checked in to the git repository. Only the meta data is checked in. So you have to run npm-install to download all the required node modules.
 Build the node image, and use the below command to mount the repo and install the required node modules. This has to be done only for the first time you run this project. You can exec in to the docker shell, and install other modules as required.
 ```
-make build-dev
-make npm-install
+## open a shell into the angular docker container,
+## mounts the angular project in the container
+make run-angular-shell 
+
+## install the node modules
+npm install
+```
+
+To start the angular ui in dev mode
+```
+make run
 ```
 
 To start the project in developer mode.

@@ -7,7 +7,7 @@ import { InitReq } from '../../gen/fetch.pb';
 })
 export class DomainService {
   
-  private static SERVICE_ENDPOINT = '/api/watchdog/';
+  private static SERVICE_ENDPOINT = '/api/watchdog';
 
  
   constructor() { }
