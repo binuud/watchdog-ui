@@ -12,8 +12,11 @@ APP ?= watchdog-ui
 APP_DEV=watchdog-ui-dev
 
 BUILD_VER ?= a1.0.0
-
 DOCKER_HUB_TAG ?= a1.0.0
+
+## for building angular image
+## clone project https://github.com/binuud/containers
+ANGULAR_CLI_DEV=angular-cli-headless-chrome
 
 include $(cnf)
 export $(shell sed 's/=.*//' $(cnf))
@@ -27,23 +30,15 @@ help: ## This help.
 
 .DEFAULT_GOAL := help
 
-
-build-dev: ## Build the react developer container
-	@echo "====================> Building Angular Container"
-	docker build --build-arg BUILD_VER=$(BUILD_VER) --platform=linux/amd64,linux/arm64 -t $(REPO)/$(APP_DEV) -f deployment/local/compose/ui-dev.dockerfile .
-	@echo "====================> Successfully build container: $(REPO)/$(APP_DEV) ."
-
-run-shell: ## run mock server
-	docker run -it -v "$(shell pwd)/app:/app" $(REPO)/$(APP_DEV) bash
-
 run: ## run angular dev server
-	docker stop $(APP_DEV); docker rm $(APP_DEV);docker run  --name $(APP_DEV) -p "4200:4200" -v "$(shell pwd)/app:/app" $(REPO)/$(APP_DEV) start
+	echo "Access using http://binuud.loc:4200/home"
+	docker run --rm -it --name $(APP) -p 4200:4200 -v ./app:/app $(REPO)/$(ANGULAR_CLI_DEV)  npm start
 
-npm-install: ## to install node modules for project
-	docker stop $(APP_DEV); docker rm $(APP_DEV);docker run  --name $(APP_DEV) -p "4200:4200" -v "$(shell pwd)/app:/app" $(REPO)/$(APP_DEV) install
+run-angular-shell: ## run angular npm container shell, for running npm install, and  angular commangs
+	docker run --rm -it -v ./app:/app $(REPO)/$(ANGULAR_CLI_DEV) bash
 
 exec: ## get terminal access to container
-	docker exec -it $(APP_DEV) sh
+	docker exec -it $(APP) bash
 
 nginx-start: ## start nginx server locally
 	docker container start watchdog-nginx 
