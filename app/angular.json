@@ -74,6 +74,10 @@
             },
             "development": {
               "buildTarget": "watchdog-ui:build:development"
+            },
+            "mock": {
+              "buildTarget": "watchdog-ui:build:development",
+              "proxyConfig": "proxy.mock.conf.json"
             }
           },
           "defaultConfiguration": "development"

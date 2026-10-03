@@ -14,6 +14,7 @@
 
 # Environment files
 /.env
+/.local.env
 
 # Angular CLI and build artefacts
 /.angular-cli.json
@@ -21,6 +22,7 @@
 
 # TypeScript cache
 *.tsbuildinfo
+
 
 # Logs
 npm-debug.log*

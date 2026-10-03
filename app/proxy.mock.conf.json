@@ -1,0 +1,14 @@
+{
+  "/api/watchdog/v1/watchdog/getAll": {
+    "target": "http://host.docker.internal:3000/",
+    "pathRewrite": {
+      "/api/watchdog/v1/watchdog/getAll": "domains"
+    }
+  },
+  "/api/watchdog/v1/watchdog/getProjects": {
+    "target": "http://host.docker.internal:3000/",
+    "pathRewrite": {
+      "/api/watchdog/v1/watchdog/getProjects": "projects"
+    }
+  }
+}
