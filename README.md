@@ -22,6 +22,14 @@ To start the angular ui in dev mode
 make run
 ```
 
+To run the UI, with the mock server. Below command starts the json-server to run a mock-server, this takes data from mocks/db.json.
+It also starts the UI in mock mode.
+* change proxy.mock.conf.json - to add new api endpoints
+* change mocks/db.json - to add new data
+```
+make run-mock
+```
+
 To start the project in developer mode.
 ```
 make compose-dev-up 

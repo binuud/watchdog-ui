@@ -5,7 +5,7 @@
 # use build_staging.env for staging server (local too)
 
 # Optional environmental variables
-cnf ?= local.env
+cnf ?= .local.env
 REPO=dronasys-com
 AWS_ECR ?= 
 APP ?= watchdog-ui
@@ -32,7 +32,14 @@ help: ## This help.
 
 run: ## run angular dev server
 	echo "Access using http://binuud.loc:4200/home"
-	docker run --rm -it --name $(APP) -p 4200:4200 -v ./app:/app $(REPO)/$(ANGULAR_CLI_DEV)  npm start
+	docker run --rm -it --name $(APP) -p 4200:4200  -v ./app:/app $(REPO)/$(ANGULAR_CLI_DEV)  npm run start
+
+run-mock: ## run angular dev server with mocj json db
+	echo "Access using http://binuud.loc:4200/home"
+	docker run --rm -it --name $(APP) -p 4200:4200 -p 3000:3000 -v ./app:/app $(REPO)/$(ANGULAR_CLI_DEV)  npm run start:mock
+
+run-json-server: ## run json-server in existing container
+	docker exec -it $(APP) npm run start:json-server
 
 run-angular-shell: ## run angular npm container shell, for running npm install, and  angular commangs
 	docker run --rm -it -v ./app:/app $(REPO)/$(ANGULAR_CLI_DEV) bash

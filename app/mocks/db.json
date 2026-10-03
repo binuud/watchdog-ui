@@ -1,0 +1,308 @@
+{ "testapi" : {
+    "data": "test"
+  },
+  "domains": {
+    "page": "1",
+    "perPage": "10",
+    "summaries": [
+      {
+        "domain": {
+          "uuid": "",
+          "name": "www.google.com",
+          "domainName": "google.com",
+          "endpoints": [
+            "https://www.google.com",
+            "https://www.google.com/?client=safari"
+          ]
+        },
+        "reachable": false,
+        "resolvable": false,
+        "certsStatus": [],
+        "createdAt": null,
+        "httpsRedirect": false,
+        "numEndpoints": "0",
+        "validEndpoints": "0",
+        "numIp": "0",
+        "numCerts": "0",
+        "numValidCerts": "0",
+        "numExpiringCerts": "0",
+        "leastCertExpiryInDays": "0",
+        "numWhoIsUpdates": "0",
+        "whoIsMutated": false,
+        "whoIsMutatedAt": "0",
+        "whoIsMutatedDays": "0",
+        "domainExpiring": false,
+        "domainExpiryAt": "0",
+        "domainExpiryDays": "0"
+      },
+      {
+        "domain": {
+          "uuid": "",
+          "name": "mail.google.com",
+          "domainName": "",
+          "endpoints": [
+            "https://mail.google.com"
+          ]
+        },
+        "reachable": false,
+        "resolvable": false,
+        "certsStatus": [],
+        "createdAt": null,
+        "httpsRedirect": false,
+        "numEndpoints": "0",
+        "validEndpoints": "0",
+        "numIp": "0",
+        "numCerts": "0",
+        "numValidCerts": "0",
+        "numExpiringCerts": "0",
+        "leastCertExpiryInDays": "0",
+        "numWhoIsUpdates": "0",
+        "whoIsMutated": false,
+        "whoIsMutatedAt": "0",
+        "whoIsMutatedDays": "0",
+        "domainExpiring": false,
+        "domainExpiryAt": "0",
+        "domainExpiryDays": "0"
+      },
+      {
+        "domain": {
+          "uuid": "",
+          "name": "www.gmail.com",
+          "domainName": "gmail.com",
+          "endpoints": [
+            "https://www.gmail.com"
+          ]
+        },
+        "reachable": false,
+        "resolvable": false,
+        "certsStatus": [],
+        "createdAt": null,
+        "httpsRedirect": false,
+        "numEndpoints": "0",
+        "validEndpoints": "0",
+        "numIp": "0",
+        "numCerts": "0",
+        "numValidCerts": "0",
+        "numExpiringCerts": "0",
+        "leastCertExpiryInDays": "0",
+        "numWhoIsUpdates": "0",
+        "whoIsMutated": false,
+        "whoIsMutatedAt": "0",
+        "whoIsMutatedDays": "0",
+        "domainExpiring": false,
+        "domainExpiryAt": "0",
+        "domainExpiryDays": "0"
+      },
+      {
+        "domain": {
+          "uuid": "",
+          "name": "www.apple.com",
+          "domainName": "apple.com",
+          "endpoints": [
+            "https://www.apple.com"
+          ]
+        },
+        "reachable": false,
+        "resolvable": false,
+        "certsStatus": [],
+        "createdAt": null,
+        "httpsRedirect": false,
+        "numEndpoints": "0",
+        "validEndpoints": "0",
+        "numIp": "0",
+        "numCerts": "0",
+        "numValidCerts": "0",
+        "numExpiringCerts": "0",
+        "leastCertExpiryInDays": "0",
+        "numWhoIsUpdates": "0",
+        "whoIsMutated": false,
+        "whoIsMutatedAt": "0",
+        "whoIsMutatedDays": "0",
+        "domainExpiring": false,
+        "domainExpiryAt": "0",
+        "domainExpiryDays": "0"
+      },
+      {
+        "domain": {
+          "uuid": "",
+          "name": "www.dronasys.com",
+          "domainName": "dronasys.com",
+          "endpoints": [
+            "https://www.dronasys.com"
+          ]
+        },
+        "reachable": false,
+        "resolvable": false,
+        "certsStatus": [],
+        "createdAt": null,
+        "httpsRedirect": false,
+        "numEndpoints": "0",
+        "validEndpoints": "0",
+        "numIp": "0",
+        "numCerts": "0",
+        "numValidCerts": "0",
+        "numExpiringCerts": "0",
+        "leastCertExpiryInDays": "0",
+        "numWhoIsUpdates": "0",
+        "whoIsMutated": false,
+        "whoIsMutatedAt": "0",
+        "whoIsMutatedDays": "0",
+        "domainExpiring": false,
+        "domainExpiryAt": "0",
+        "domainExpiryDays": "0"
+      }
+    ]
+  },
+  "projects": {
+    "page": "1",
+    "perPage": "10",
+    "summaries": [
+      {
+        "domain": {
+          "uuid": "",
+          "name": "www.google.com",
+          "domainName": "google.com",
+          "endpoints": [
+            "https://www.google.com",
+            "https://www.google.com/?client=safari"
+          ]
+        },
+        "reachable": false,
+        "resolvable": false,
+        "certsStatus": [],
+        "createdAt": null,
+        "httpsRedirect": false,
+        "numEndpoints": "0",
+        "validEndpoints": "0",
+        "numIp": "0",
+        "numCerts": "0",
+        "numValidCerts": "0",
+        "numExpiringCerts": "0",
+        "leastCertExpiryInDays": "0",
+        "numWhoIsUpdates": "0",
+        "whoIsMutated": false,
+        "whoIsMutatedAt": "0",
+        "whoIsMutatedDays": "0",
+        "domainExpiring": false,
+        "domainExpiryAt": "0",
+        "domainExpiryDays": "0"
+      },
+      {
+        "domain": {
+          "uuid": "",
+          "name": "mail.google.com",
+          "domainName": "",
+          "endpoints": [
+            "https://mail.google.com"
+          ]
+        },
+        "reachable": false,
+        "resolvable": false,
+        "certsStatus": [],
+        "createdAt": null,
+        "httpsRedirect": false,
+        "numEndpoints": "0",
+        "validEndpoints": "0",
+        "numIp": "0",
+        "numCerts": "0",
+        "numValidCerts": "0",
+        "numExpiringCerts": "0",
+        "leastCertExpiryInDays": "0",
+        "numWhoIsUpdates": "0",
+        "whoIsMutated": false,
+        "whoIsMutatedAt": "0",
+        "whoIsMutatedDays": "0",
+        "domainExpiring": false,
+        "domainExpiryAt": "0",
+        "domainExpiryDays": "0"
+      },
+      {
+        "domain": {
+          "uuid": "",
+          "name": "www.gmail.com",
+          "domainName": "gmail.com",
+          "endpoints": [
+            "https://www.gmail.com"
+          ]
+        },
+        "reachable": false,
+        "resolvable": false,
+        "certsStatus": [],
+        "createdAt": null,
+        "httpsRedirect": false,
+        "numEndpoints": "0",
+        "validEndpoints": "0",
+        "numIp": "0",
+        "numCerts": "0",
+        "numValidCerts": "0",
+        "numExpiringCerts": "0",
+        "leastCertExpiryInDays": "0",
+        "numWhoIsUpdates": "0",
+        "whoIsMutated": false,
+        "whoIsMutatedAt": "0",
+        "whoIsMutatedDays": "0",
+        "domainExpiring": false,
+        "domainExpiryAt": "0",
+        "domainExpiryDays": "0"
+      },
+      {
+        "domain": {
+          "uuid": "",
+          "name": "www.apple.com",
+          "domainName": "apple.com",
+          "endpoints": [
+            "https://www.apple.com"
+          ]
+        },
+        "reachable": false,
+        "resolvable": false,
+        "certsStatus": [],
+        "createdAt": null,
+        "httpsRedirect": false,
+        "numEndpoints": "0",
+        "validEndpoints": "0",
+        "numIp": "0",
+        "numCerts": "0",
+        "numValidCerts": "0",
+        "numExpiringCerts": "0",
+        "leastCertExpiryInDays": "0",
+        "numWhoIsUpdates": "0",
+        "whoIsMutated": false,
+        "whoIsMutatedAt": "0",
+        "whoIsMutatedDays": "0",
+        "domainExpiring": false,
+        "domainExpiryAt": "0",
+        "domainExpiryDays": "0"
+      },
+      {
+        "domain": {
+          "uuid": "",
+          "name": "www.dronasys.com",
+          "domainName": "dronasys.com",
+          "endpoints": [
+            "https://www.dronasys.com"
+          ]
+        },
+        "reachable": false,
+        "resolvable": false,
+        "certsStatus": [],
+        "createdAt": null,
+        "httpsRedirect": false,
+        "numEndpoints": "0",
+        "validEndpoints": "0",
+        "numIp": "0",
+        "numCerts": "0",
+        "numValidCerts": "0",
+        "numExpiringCerts": "0",
+        "leastCertExpiryInDays": "0",
+        "numWhoIsUpdates": "0",
+        "whoIsMutated": false,
+        "whoIsMutatedAt": "0",
+        "whoIsMutatedDays": "0",
+        "domainExpiring": false,
+        "domainExpiryAt": "0",
+        "domainExpiryDays": "0"
+      }
+    ]
+  }
+}

@@ -4,9 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --host 0.0.0.0",
+    "start:mock": "concurrently 'ng serve --host 0.0.0.0 --configuration mock' 'json-server mocks/db.json'",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "start:json-server": "json-server mocks/db.json",
     "serve:ssr:watchdog-ui": "node dist/watchdog-ui/server/server.mjs"
   },
   "prettier": {
@@ -29,6 +31,7 @@
     "@angular/platform-server": "^20.1.0",
     "@angular/router": "^20.1.0",
     "@angular/ssr": "^20.1.0",
+    "curl": "^0.1.4",
     "express": "^5.1.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
@@ -41,7 +44,9 @@
     "@types/express": "^5.0.1",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^20.17.19",
+    "concurrently": "^10.0.5",
     "jasmine-core": "~5.8.0",
+    "json-server": "^1.0.0-beta.15",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
