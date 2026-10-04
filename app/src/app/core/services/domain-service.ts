@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { GetDetailsRequest, GetRequest, ListSummariesRequest, WatchDog } from '../../gen/v1/watchdog/watchdogService.pb';
+import { GetDetailsRequest, ListSummariesRequest, WatchDog } from '../../gen/v1/watchdog/watchdogService.pb';
 import { InitReq } from '../../gen/fetch.pb';
 
 @Injectable({

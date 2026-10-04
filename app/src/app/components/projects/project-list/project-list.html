@@ -1,0 +1,5 @@
+<h3>Projects</h3>
+
+@for (item of projectList.projects; track $index) {
+  <app-project-card [project]="item"></app-project-card>
+}

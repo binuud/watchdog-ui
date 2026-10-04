@@ -30,6 +30,8 @@ help: ## This help.
 
 .DEFAULT_GOAL := help
 
+
+
 run: ## run angular dev server
 	echo "Access using http://binuud.loc:4200/home"
 	docker run --rm -it --name $(APP) -p 4200:4200  -v ./app:/app $(REPO)/$(ANGULAR_CLI_DEV)  npm run start
@@ -56,3 +58,6 @@ nginx-create: ##
 compose-dev-up: ## docker compose up - watchdog backend, and frontend in dev mode
 	echo "Access via http://localhost:9080/home"
 	cd deployment/local/compose && docker compose -f docker-dev-compose.yaml up
+
+copy-generated-proto-service: ## copy generated files from watchdog proto
+	cp -R ../watchdog/gen/web/ app/src/app/gen/

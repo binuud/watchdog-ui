@@ -156,152 +156,146 @@
   "projects": {
     "page": "1",
     "perPage": "10",
-    "summaries": [
+    "projects": [
       {
-        "domain": {
+        "project": {
           "uuid": "",
-          "name": "www.google.com",
-          "domainName": "google.com",
-          "endpoints": [
-            "https://www.google.com",
-            "https://www.google.com/?client=safari"
-          ]
+          "name": "rustai",
+          "path": "Code/ai/rustai",
+          "description": "",
+          "org": "binuud",
+          "projecturl": "https://github.com/binuud/rustai",
+          "remoteurl": "https://github.com/binuud/rustai.git",
+          "user": "binuud",
+          "status": "IGNORE_PROJECT_STATUS"
         },
-        "reachable": false,
-        "resolvable": false,
-        "certsStatus": [],
-        "createdAt": null,
-        "httpsRedirect": false,
-        "numEndpoints": "0",
-        "validEndpoints": "0",
-        "numIp": "0",
-        "numCerts": "0",
-        "numValidCerts": "0",
-        "numExpiringCerts": "0",
-        "leastCertExpiryInDays": "0",
-        "numWhoIsUpdates": "0",
-        "whoIsMutated": false,
-        "whoIsMutatedAt": "0",
-        "whoIsMutatedDays": "0",
-        "domainExpiring": false,
-        "domainExpiryAt": "0",
-        "domainExpiryDays": "0"
+        "status": {
+          "branchName": "",
+          "upstreamBranch": "",
+          "aheadCount": 0,
+          "behindCount": 2,
+          "isClean": false,
+          "isPrivate": true,
+          "visibility": "private",
+          "numModified": "1",
+          "numUnstaged": "0",
+          "numUntracked": "1",
+          "numIgnored": "0",
+          "numStashes": "0",
+          "numPrOpen": "0",
+          "numIssuesOpen": "1",
+          "staged": [],
+          "unstaged": [],
+          "untracked": [],
+          "ignored": [],
+          "commonAncestor": "2bc5ef5"
+        },
+        "createdAt": null
       },
       {
-        "domain": {
+        "project": {
           "uuid": "",
-          "name": "mail.google.com",
-          "domainName": "",
-          "endpoints": [
-            "https://mail.google.com"
-          ]
+          "name": "dev-tools",
+          "path": "Code/local/dev-tools",
+          "description": "",
+          "org": "binuud",
+          "projecturl": "https://github.com/binuud/dev-tools",
+          "remoteurl": "https://github.com/binuud/dev-tools.git",
+          "user": "binuud",
+          "status": "IGNORE_PROJECT_STATUS"
         },
-        "reachable": false,
-        "resolvable": false,
-        "certsStatus": [],
-        "createdAt": null,
-        "httpsRedirect": false,
-        "numEndpoints": "0",
-        "validEndpoints": "0",
-        "numIp": "0",
-        "numCerts": "0",
-        "numValidCerts": "0",
-        "numExpiringCerts": "0",
-        "leastCertExpiryInDays": "0",
-        "numWhoIsUpdates": "0",
-        "whoIsMutated": false,
-        "whoIsMutatedAt": "0",
-        "whoIsMutatedDays": "0",
-        "domainExpiring": false,
-        "domainExpiryAt": "0",
-        "domainExpiryDays": "0"
+        "status": {
+          "branchName": "",
+          "upstreamBranch": "",
+          "aheadCount": 0,
+          "behindCount": 0,
+          "isClean": false,
+          "isPrivate": false,
+          "visibility": "public",
+          "numModified": "0",
+          "numUnstaged": "0",
+          "numUntracked": "2",
+          "numIgnored": "0",
+          "numStashes": "1",
+          "numPrOpen": "0",
+          "numIssuesOpen": "0",
+          "staged": [],
+          "unstaged": [],
+          "untracked": [],
+          "ignored": [],
+          "commonAncestor": ""
+        },
+        "createdAt": null
       },
       {
-        "domain": {
+        "project": {
           "uuid": "",
-          "name": "www.gmail.com",
-          "domainName": "gmail.com",
-          "endpoints": [
-            "https://www.gmail.com"
-          ]
+          "name": "containers",
+          "path": "Code/local/containers",
+          "description": "",
+          "org": "binuud",
+          "projecturl": "https://github.com/binuud/containers",
+          "remoteurl": "https://github.com/binuud/containers.git",
+          "user": "binuud",
+          "status": "IGNORE_PROJECT_STATUS"
         },
-        "reachable": false,
-        "resolvable": false,
-        "certsStatus": [],
-        "createdAt": null,
-        "httpsRedirect": false,
-        "numEndpoints": "0",
-        "validEndpoints": "0",
-        "numIp": "0",
-        "numCerts": "0",
-        "numValidCerts": "0",
-        "numExpiringCerts": "0",
-        "leastCertExpiryInDays": "0",
-        "numWhoIsUpdates": "0",
-        "whoIsMutated": false,
-        "whoIsMutatedAt": "0",
-        "whoIsMutatedDays": "0",
-        "domainExpiring": false,
-        "domainExpiryAt": "0",
-        "domainExpiryDays": "0"
+        "status": {
+          "branchName": "",
+          "upstreamBranch": "",
+          "aheadCount": 0,
+          "behindCount": 0,
+          "isClean": true,
+          "isPrivate": false,
+          "visibility": "public",
+          "numModified": "0",
+          "numUnstaged": "0",
+          "numUntracked": "0",
+          "numIgnored": "0",
+          "numStashes": "0",
+          "numPrOpen": "0",
+          "numIssuesOpen": "0",
+          "staged": [],
+          "unstaged": [],
+          "untracked": [],
+          "ignored": [],
+          "commonAncestor": ""
+        },
+        "createdAt": null
       },
       {
-        "domain": {
+        "project": {
           "uuid": "",
-          "name": "www.apple.com",
-          "domainName": "apple.com",
-          "endpoints": [
-            "https://www.apple.com"
-          ]
+          "name": "watchdog",
+          "path": "Code/watchdog/watchdog",
+          "description": "",
+          "org": "binuud",
+          "projecturl": "https://github.com/binuud/watchdog",
+          "remoteurl": "https://github.com/binuud/watchdog.git",
+          "user": "binuud",
+          "status": "IGNORE_PROJECT_STATUS"
         },
-        "reachable": false,
-        "resolvable": false,
-        "certsStatus": [],
-        "createdAt": null,
-        "httpsRedirect": false,
-        "numEndpoints": "0",
-        "validEndpoints": "0",
-        "numIp": "0",
-        "numCerts": "0",
-        "numValidCerts": "0",
-        "numExpiringCerts": "0",
-        "leastCertExpiryInDays": "0",
-        "numWhoIsUpdates": "0",
-        "whoIsMutated": false,
-        "whoIsMutatedAt": "0",
-        "whoIsMutatedDays": "0",
-        "domainExpiring": false,
-        "domainExpiryAt": "0",
-        "domainExpiryDays": "0"
-      },
-      {
-        "domain": {
-          "uuid": "",
-          "name": "www.dronasys.com",
-          "domainName": "dronasys.com",
-          "endpoints": [
-            "https://www.dronasys.com"
-          ]
+        "status": {
+          "branchName": "",
+          "upstreamBranch": "",
+          "aheadCount": 0,
+          "behindCount": 0,
+          "isClean": false,
+          "isPrivate": false,
+          "visibility": "public",
+          "numModified": "8",
+          "numUnstaged": "0",
+          "numUntracked": "0",
+          "numIgnored": "0",
+          "numStashes": "0",
+          "numPrOpen": "0",
+          "numIssuesOpen": "0",
+          "staged": [],
+          "unstaged": [],
+          "untracked": [],
+          "ignored": [],
+          "commonAncestor": ""
         },
-        "reachable": false,
-        "resolvable": false,
-        "certsStatus": [],
-        "createdAt": null,
-        "httpsRedirect": false,
-        "numEndpoints": "0",
-        "validEndpoints": "0",
-        "numIp": "0",
-        "numCerts": "0",
-        "numValidCerts": "0",
-        "numExpiringCerts": "0",
-        "leastCertExpiryInDays": "0",
-        "numWhoIsUpdates": "0",
-        "whoIsMutated": false,
-        "whoIsMutatedAt": "0",
-        "whoIsMutatedDays": "0",
-        "domainExpiring": false,
-        "domainExpiryAt": "0",
-        "domainExpiryDays": "0"
+        "createdAt": null
       }
     ]
   }
