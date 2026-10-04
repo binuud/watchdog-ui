@@ -1,0 +1,49 @@
+@if (project) {
+  <div class="card mb-3 p-3">
+    
+    @if (project.project) {
+      @let details = project.project;
+      @let status = project.status;
+      
+      <div class="row">
+        <div class="col-sm-4">
+          <h4 class="d-inline"><a href="{{ details.projecturl }}" target="_blank">{{ project.project.name }}</a></h4><small class="ps-2"><i class="small">{{ status?.visibility }}</i></small>
+          <p>
+            @if (status?.commonAncestor) {
+              <i class="fa-solid fa-code-fork"></i> {{ status?.commonAncestor }} cannot auto merge<br/>
+            }
+            <i class="fa-solid fa-box-archive"></i> {{ status?.numStashes }} stashes<br/>
+          </p>
+
+        </div>
+        <div class="col-sm-8">
+          <table class="table small iconTable">
+            <tr>
+              <td style="width: 80px;" class="text-start"><i class="fa-solid fa-bug pe-2" [class]="status?.numIssuesOpen == '0' ? 'success' : 'error'"></i> Issues</td>
+              <td style="width: 25px;" class="text-center"><a href="{{ details.projecturl }}/issues" target="_blank">{{ status?.numIssuesOpen }}</a></td>
+              <td style="width: 50px;"></td>
+              <td style="width: 130px;" class="text-start"><i class="fa-solid fa-file-lines pe-2" [class]="status?.numModified == '0' ? 'success' : 'error'"></i> Modified Files</td>
+              <td style="width: 25px;" class="text-center">{{ status?.numModified }}</td>
+              <td style="width: 50px;"></td>
+              <td style="width: 130px;" class="text-start"><i class="fa-solid fa-arrow-right-long" [class]="status?.behindCount == 0 ? 'success' : 'error'"></i> Remote Ahead</td>
+              <td style="width: 25px;" class="text-center">{{ status?.behindCount }}</td>
+            </tr>
+            <tr>
+              <td class="text-start"><i class="fa-solid fa-code-pull-request pe-2" [class]="status?.numPrOpen == '0' ? 'success' : 'error'"></i> PRs</td>
+              <td class="text-center"><a href="{{ details.projecturl }}/pulls" target="_blank">{{ status?.numPrOpen }}</a></td>
+              <td ></td>
+              <td class="text-start"><i class="fa-solid fa-file-circle-plus pe-2" [class]="status?.numUntracked == '0' ? 'success' : 'error'"></i> New Files</td>
+              <td class="text-center">{{ status?.numUntracked }}</td>
+              <td></td>
+              <td style="width: 130px;" class="text-start"><i class="fa-solid fa-arrow-left-long" [class]="status?.aheadCount == 0 ? 'success' : 'error'"></i> Local Ahead</td>
+              <td style="width: 25px;" class="text-center">{{ status?.aheadCount }}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      
+    }
+
+  </div>
+}
+
