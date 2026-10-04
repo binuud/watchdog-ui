@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --host 0.0.0.0",
-    "start:mock": "concurrently 'ng serve --host 0.0.0.0 --configuration mock' 'json-server mocks/db.json'",
+    "start:mock": "concurrently 'json-server mocks/db.json' 'ng serve --host 0.0.0.0 --configuration mock'",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",

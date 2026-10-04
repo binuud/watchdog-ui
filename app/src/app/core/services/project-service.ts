@@ -10,7 +10,7 @@ import { InitReq } from '../../gen/fetch.pb';
 // List project summaries
 export class ProjectService {
 
-  private static SERVICE_ENDPOINT = '/api/watchdog';
+  private static SERVICE_ENDPOINT = '';
   
   
   constructor() { }
