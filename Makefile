@@ -30,7 +30,8 @@ help: ## This help.
 
 .DEFAULT_GOAL := help
 
-
+build: ## build watch-dog angular project
+	docker run --rm -it --name $(APP) -p 4200:4200 -p 3000:3000 -v ./app:/app $(REPO)/$(ANGULAR_CLI_DEV)  npm run build
 
 run: ## run angular dev server
 	echo "Access using http://binuud.loc:4200/home"
