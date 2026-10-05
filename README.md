@@ -1,5 +1,6 @@
 # watchdog-ui
-Dashboard for watchdog
+Dashboard for watchdog, this is the angular UI. The ui is packaged and served along with the backed. 
+[Click here for WatchDog Project](https://github.com/binuud/watchdog)
 
 * [UI Description](/docs/UI-HELP.md)
 
