@@ -273,7 +273,7 @@
       }
     ]
   },
-  "projects": {
+    "projects": {
     "page": "1",
     "perPage": "10",
     "projects": [
@@ -402,13 +402,48 @@
           "isClean": false,
           "isPrivate": false,
           "visibility": "public",
-          "numModified": "8",
+          "numModified": "2",
+          "numUnstaged": "0",
+          "numUntracked": "2",
+          "numIgnored": "0",
+          "numStashes": "0",
+          "numPrOpen": "0",
+          "numIssuesOpen": "0",
+          "staged": [],
+          "unstaged": [],
+          "untracked": [],
+          "ignored": [],
+          "commonAncestor": ""
+        },
+        "createdAt": null
+      },
+      {
+        "project": {
+          "uuid": "",
+          "name": "ai-embedded",
+          "path": "Code/ai/ai-embedded",
+          "description": "",
+          "org": "binuud",
+          "projecturl": "https://github.com/binuud/ai-embedded",
+          "remoteurl": "https://github.com/binuud/ai-embedded.git",
+          "user": "binuud",
+          "status": "IGNORE_PROJECT_STATUS"
+        },
+        "status": {
+          "branchName": "",
+          "upstreamBranch": "",
+          "aheadCount": 0,
+          "behindCount": 0,
+          "isClean": true,
+          "isPrivate": false,
+          "visibility": "public",
+          "numModified": "0",
           "numUnstaged": "0",
           "numUntracked": "0",
           "numIgnored": "0",
           "numStashes": "0",
           "numPrOpen": "0",
-          "numIssuesOpen": "0",
+          "numIssuesOpen": "1",
           "staged": [],
           "unstaged": [],
           "untracked": [],
