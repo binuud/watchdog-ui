@@ -1,6 +1,8 @@
 # watchdog-ui
 Dashboard for watchdog
 
+* [UI Description](/docs/UI-HELP.md)
+
 ## Developer mode
 
 Build the angular/cli-with-chrome-headless docker image from the below project
