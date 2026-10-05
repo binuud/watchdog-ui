@@ -15,25 +15,41 @@
             "https://www.google.com/?client=safari"
           ]
         },
-        "reachable": false,
-        "resolvable": false,
-        "certsStatus": [],
-        "createdAt": null,
+        "reachable": true,
+        "resolvable": true,
+        "certsStatus": [
+          {
+            "status": "Valid",
+            "certValid": true,
+            "certExpiry": "67"
+          },
+          {
+            "status": "WrongCertificate",
+            "certValid": false,
+            "certExpiry": "869"
+          },
+          {
+            "status": "WrongCertificate",
+            "certValid": false,
+            "certExpiry": "479"
+          }
+        ],
+        "createdAt": "2026-10-05T03:43:22.731431340Z",
         "httpsRedirect": false,
-        "numEndpoints": "0",
-        "validEndpoints": "0",
-        "numIp": "0",
-        "numCerts": "0",
-        "numValidCerts": "0",
+        "numEndpoints": "2",
+        "validEndpoints": "2",
+        "numIp": "16",
+        "numCerts": "3",
+        "numValidCerts": "1",
         "numExpiringCerts": "0",
-        "leastCertExpiryInDays": "0",
+        "leastCertExpiryInDays": "67",
         "numWhoIsUpdates": "0",
         "whoIsMutated": false,
-        "whoIsMutatedAt": "0",
-        "whoIsMutatedDays": "0",
+        "whoIsMutatedAt": "1568043544",
+        "whoIsMutatedDays": "2582",
         "domainExpiring": false,
-        "domainExpiryAt": "0",
-        "domainExpiryDays": "0"
+        "domainExpiryAt": "1852516800",
+        "domainExpiryDays": "710"
       },
       {
         "domain": {
@@ -44,18 +60,34 @@
             "https://mail.google.com"
           ]
         },
-        "reachable": false,
-        "resolvable": false,
-        "certsStatus": [],
-        "createdAt": null,
+        "reachable": true,
+        "resolvable": true,
+        "certsStatus": [
+          {
+            "status": "Valid",
+            "certValid": true,
+            "certExpiry": "67"
+          },
+          {
+            "status": "WrongCertificate",
+            "certValid": false,
+            "certExpiry": "869"
+          },
+          {
+            "status": "WrongCertificate",
+            "certValid": false,
+            "certExpiry": "479"
+          }
+        ],
+        "createdAt": "2026-10-05T03:43:24.490435966Z",
         "httpsRedirect": false,
-        "numEndpoints": "0",
-        "validEndpoints": "0",
-        "numIp": "0",
-        "numCerts": "0",
-        "numValidCerts": "0",
+        "numEndpoints": "1",
+        "validEndpoints": "1",
+        "numIp": "2",
+        "numCerts": "3",
+        "numValidCerts": "1",
         "numExpiringCerts": "0",
-        "leastCertExpiryInDays": "0",
+        "leastCertExpiryInDays": "67",
         "numWhoIsUpdates": "0",
         "whoIsMutated": false,
         "whoIsMutatedAt": "0",
@@ -73,25 +105,41 @@
             "https://www.gmail.com"
           ]
         },
-        "reachable": false,
-        "resolvable": false,
-        "certsStatus": [],
-        "createdAt": null,
+        "reachable": true,
+        "resolvable": true,
+        "certsStatus": [
+          {
+            "status": "Valid",
+            "certValid": true,
+            "certExpiry": "67"
+          },
+          {
+            "status": "WrongCertificate",
+            "certValid": false,
+            "certExpiry": "869"
+          },
+          {
+            "status": "WrongCertificate",
+            "certValid": false,
+            "certExpiry": "479"
+          }
+        ],
+        "createdAt": "2026-10-05T03:43:27.530376009Z",
         "httpsRedirect": false,
-        "numEndpoints": "0",
-        "validEndpoints": "0",
-        "numIp": "0",
-        "numCerts": "0",
-        "numValidCerts": "0",
+        "numEndpoints": "1",
+        "validEndpoints": "1",
+        "numIp": "2",
+        "numCerts": "3",
+        "numValidCerts": "1",
         "numExpiringCerts": "0",
-        "leastCertExpiryInDays": "0",
+        "leastCertExpiryInDays": "67",
         "numWhoIsUpdates": "0",
         "whoIsMutated": false,
-        "whoIsMutatedAt": "0",
-        "whoIsMutatedDays": "0",
+        "whoIsMutatedAt": "1783764683",
+        "whoIsMutatedDays": "85",
         "domainExpiring": false,
-        "domainExpiryAt": "0",
-        "domainExpiryDays": "0"
+        "domainExpiryAt": "1818043200",
+        "domainExpiryDays": "311"
       },
       {
         "domain": {
@@ -102,25 +150,36 @@
             "https://www.apple.com"
           ]
         },
-        "reachable": false,
-        "resolvable": false,
-        "certsStatus": [],
-        "createdAt": null,
+        "reachable": true,
+        "resolvable": true,
+        "certsStatus": [
+          {
+            "status": "Valid",
+            "certValid": true,
+            "certExpiry": "72"
+          },
+          {
+            "status": "WrongCertificate",
+            "certValid": false,
+            "certExpiry": "1283"
+          }
+        ],
+        "createdAt": "2026-10-05T03:43:28.986805343Z",
         "httpsRedirect": false,
-        "numEndpoints": "0",
-        "validEndpoints": "0",
-        "numIp": "0",
-        "numCerts": "0",
-        "numValidCerts": "0",
+        "numEndpoints": "1",
+        "validEndpoints": "1",
+        "numIp": "12",
+        "numCerts": "2",
+        "numValidCerts": "1",
         "numExpiringCerts": "0",
-        "leastCertExpiryInDays": "0",
+        "leastCertExpiryInDays": "72",
         "numWhoIsUpdates": "0",
         "whoIsMutated": false,
-        "whoIsMutatedAt": "0",
-        "whoIsMutatedDays": "0",
+        "whoIsMutatedAt": "1770651713",
+        "whoIsMutatedDays": "237",
         "domainExpiring": false,
-        "domainExpiryAt": "0",
-        "domainExpiryDays": "0"
+        "domainExpiryAt": "1803099600",
+        "domainExpiryDays": "138"
       },
       {
         "domain": {
@@ -131,25 +190,86 @@
             "https://www.dronasys.com"
           ]
         },
-        "reachable": false,
-        "resolvable": false,
-        "certsStatus": [],
-        "createdAt": null,
+        "reachable": true,
+        "resolvable": true,
+        "certsStatus": [
+          {
+            "status": "Valid",
+            "certValid": true,
+            "certExpiry": "79"
+          },
+          {
+            "status": "WrongCertificate",
+            "certValid": false,
+            "certExpiry": "869"
+          },
+          {
+            "status": "WrongCertificate",
+            "certValid": false,
+            "certExpiry": "479"
+          }
+        ],
+        "createdAt": "2026-10-05T03:43:31.193959594Z",
         "httpsRedirect": false,
-        "numEndpoints": "0",
-        "validEndpoints": "0",
-        "numIp": "0",
-        "numCerts": "0",
-        "numValidCerts": "0",
+        "numEndpoints": "1",
+        "validEndpoints": "1",
+        "numIp": "8",
+        "numCerts": "3",
+        "numValidCerts": "1",
         "numExpiringCerts": "0",
-        "leastCertExpiryInDays": "0",
+        "leastCertExpiryInDays": "79",
         "numWhoIsUpdates": "0",
         "whoIsMutated": false,
-        "whoIsMutatedAt": "0",
-        "whoIsMutatedDays": "0",
+        "whoIsMutatedAt": "1778924113",
+        "whoIsMutatedDays": "141",
         "domainExpiring": false,
-        "domainExpiryAt": "0",
-        "domainExpiryDays": "0"
+        "domainExpiryAt": "1816180532",
+        "domainExpiryDays": "289"
+      },
+      {
+        "domain": {
+          "uuid": "",
+          "name": "binuud.com",
+          "domainName": "binuud.com",
+          "endpoints": [
+            "https://binuud.com"
+          ]
+        },
+        "reachable": true,
+        "resolvable": true,
+        "certsStatus": [
+          {
+            "status": "Valid",
+            "certValid": true,
+            "certExpiry": "65"
+          },
+          {
+            "status": "WrongCertificate",
+            "certValid": false,
+            "certExpiry": "869"
+          },
+          {
+            "status": "WrongCertificate",
+            "certValid": false,
+            "certExpiry": "479"
+          }
+        ],
+        "createdAt": "2026-10-05T03:43:33.264539428Z",
+        "httpsRedirect": false,
+        "numEndpoints": "1",
+        "validEndpoints": "1",
+        "numIp": "4",
+        "numCerts": "3",
+        "numValidCerts": "1",
+        "numExpiringCerts": "0",
+        "leastCertExpiryInDays": "65",
+        "numWhoIsUpdates": "0",
+        "whoIsMutated": false,
+        "whoIsMutatedAt": "1778867629",
+        "whoIsMutatedDays": "142",
+        "domainExpiring": false,
+        "domainExpiryAt": "1806387081",
+        "domainExpiryDays": "176"
       }
     ]
   },

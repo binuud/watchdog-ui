@@ -11,7 +11,7 @@
     <tr>
       <th scope="col"></th>
       <th scope="col" class="text-left">Name</th>
-      <th scope="col" class="text-center">Mutaded</th>
+      <th scope="col" class="text-center">Mutated</th>
       <th scope="col" class="text-center">Expiry</th>
       <th scope="col"></th>
       <th scope="col" class="text-center"></th>
@@ -31,7 +31,7 @@
     <tbody>
     @for (item of domainList.summaries; track $index) {
         <tr>
-            <td>{{ $index }}</td>
+            <td>{{ $index+1 }}</td>
             <td class="text-left"><a href="/domainDetails/{{item.domain?.name}}">{{item.domain?.name}}</a></td>
             <td class="text-center">{{item.whoIsMutatedDays}}</td>
             <td class="text-center">{{item.domainExpiryDays}}</td>
